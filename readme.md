@@ -8,20 +8,24 @@ Messaging and VoIP communication server.
 [vector]: https://github.com/vector-im/vector-web
 
 
-# Configuration
-
-You have to setup `/data`-directory with a `vector.im.conf` file.
-
-Example:
-
-    $ docker run -v /tmp/data:/data --rm silviof/docker-matrix-vector
-
-
 # Start
 
-For starting you need a mapping for the `/data`-directory.
+For starting you need a mapping for the `/data`-directory with
+a `vector.im.conf` file.
 
-    $ docker run -d -v /tmp/data:/data silviof/docker-matrix start
+    $ docker run -d -v /tmp/data:/data silviof/docker-matrix-vector
+
+
+## Example vector.im.conf
+
+```conf
+-p 8765
+-A 0.0.0.0
+-c 3500
+--ssl
+--cert /data/fullchain.pem
+--key /data/key.pem
+```
 
 
 # build specific arguments
