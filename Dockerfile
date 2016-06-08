@@ -30,7 +30,8 @@ RUN chmod a+x /start.sh \
         nodejs \
         sqlite-libs \
         unzip \
-    && npm install -g webpack http-server \
+        ; \
+    npm install -g webpack http-server \
     && curl -L https://github.com/vector-im/vector-web/archive/$BV_VEC.zip -o v.zip \
     && unzip v.zip \
     && rm v.zip \
@@ -41,7 +42,9 @@ RUN chmod a+x /start.sh \
     && GIT_VEC=$(git ls-remote https://github.com/vector-im/vector-web $BV_VEC | cut -f 1) \
     && echo "vector:  $BV_VEC ($GIT_VEC)" > /synapse.version \
     && npm run build \
-    && apk del \
+    ; \
+    apk del \
         git \
         unzip \
-    && rm -rf /var/lib/apk/* /var/cache/apk/*
+        ; \
+    rm -rf /var/lib/apk/* /var/cache/apk/*
