@@ -4,7 +4,7 @@
 Dockerfile for installation of [vector] for [matrix] open federated Instant
 Messaging and VoIP communication server.
 
-[matrix]: matrix.org
+[matrix]: http://www.matrix.org
 [vector]: https://github.com/vector-im/vector-web
 
 
