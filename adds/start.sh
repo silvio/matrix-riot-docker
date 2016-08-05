@@ -1,5 +1,13 @@
 #!/usr/bin/env sh
 
+if [ -f /data/config.json ]; then
+	echo "-=> vector config file found, ... rebuild sources"
+	cd /vector-web
+	cp /data/config.json /vector-web/config.json
+
+	npm run build
+fi
+
 if [ -f /data/vector.im.conf ]; then
 	options=""
 

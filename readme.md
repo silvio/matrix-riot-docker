@@ -15,6 +15,10 @@ a `vector.im.conf` file.
 
     $ docker run -d -v /tmp/data:/data silviof/docker-matrix-vector
 
+To configure some aspect of the service, this folder can also hold
+a `config.json` file. The vector-web "binary" will generated on every start of
+the service then.
+
 
 ## Example vector.im.conf
 
