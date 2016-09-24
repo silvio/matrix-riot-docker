@@ -2,8 +2,7 @@
 
 if [ -f /data/config.json ]; then
 	echo "-=> riot.im config file found, ... rebuild sources"
-	cd /riot-web
-	cp /data/config.json /riot-web/config.json
+	cp /data/config.json /riot-web/vector/config.json
 
 	npm run build
 fi
