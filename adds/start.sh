@@ -2,7 +2,7 @@
 
 if [ -f /data/config.json ]; then
 	echo "-=> riot.im config file found, ... rebuild sources"
-	cp /data/config.json /riot-web/vector/config.json
+	cp /data/config.json /riot-web/webapp/config.json
 
 	cd /riot-web
 	npm run build
@@ -25,7 +25,7 @@ if [ -f ${CONFFILENAME} ]; then
 		options="${options} ${line}"
 	done < ${CONFFILENAME}
 
-	cd /riot-web/vector
+	cd /riot-web/webapp
 	echo "-=> riot.im options: http-server ${options}"
 	http-server ${options}
 else
