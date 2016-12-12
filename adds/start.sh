@@ -27,7 +27,7 @@ if [ -f ${CONFFILENAME} ]; then
 
 	cd /riot-web/webapp
 	echo "-=> riot.im options: http-server ${options}"
-	http-server ${options}
+	exec http-server ${options}
 else
 	echo "You need a conffile /data/riot.im.conf in you conf folder"
 	exit 1
