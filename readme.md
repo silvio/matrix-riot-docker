@@ -1,11 +1,16 @@
 
+[![Build Status](https://travis-ci.org/silvio/matrix-riot-docker.svg?branch=master)](https://travis-ci.org/silvio/matrix-riot-docker)
+
 # Introduction
 
 Dockerfile for installation of [riot.im] for [matrix] open federated Instant
 Messaging and VoIP communication server.
 
+Automatic build and tested via [travis].
+
 [matrix]: http://www.matrix.org
 [riot.im]: https://riot.im
+[travis]: https://travis-ci.org/silvio/matrix-riot-docker
 
 
 # Start
