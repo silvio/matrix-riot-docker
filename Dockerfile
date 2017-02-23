@@ -1,4 +1,4 @@
-FROM alpine:3.4
+FROM alpine:3.5
 
 # Maintainer
 MAINTAINER Silvio Fricke <silvio.fricke@gmail.com>
