@@ -1,0 +1,6 @@
+#!/bin/sh
+
+TAG="${DOCKER_TAG}"
+[ "${TAG}" == "latest" ] && TAG="master"
+
+docker build --build-arg "BV_VEC=${TAG}" -t $IMAGE_NAME .
