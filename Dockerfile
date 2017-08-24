@@ -31,7 +31,7 @@ RUN chmod a+x /start.sh \
         nodejs \
         sqlite-libs \
         unzip \
-        ; \
+        || exit 1 ; \
     npm install -g webpack http-server \
     && curl -L https://github.com/vector-im/riot-web/archive/$BV_VEC.zip -o v.zip \
     && unzip v.zip \
@@ -43,6 +43,7 @@ RUN chmod a+x /start.sh \
     && GIT_VEC=$(git ls-remote https://github.com/vector-im/riot-web $BV_VEC | cut -f 1) \
     && echo "riot:  $BV_VEC ($GIT_VEC)" > /synapse.version \
     && npm run build \
+    || exit 1 \
     ; \
     apk del \
         git \
