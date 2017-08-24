@@ -3,16 +3,6 @@
 TAG="${DOCKER_TAG}"
 [ "${TAG}" == "latest" ] && TAG="master"
 
-# check if $TAG contains a ':' when yes so we split the tag and replace the
-# IMAGE_NAME with a new value
-# <TAG-or-BRANCH>:<NEW-IMAGENAME>
-# example:
-#   "v0.12.1:latest"
-if echo "${TAG}" | grep ":"; then
-    TAG="$(echo ${TAG} | cut -d ":" -f 1)"
-    IMAGE_NAME="$(echo ${TAG} | cut -d ":" -f 2)"
-fi
-
 docker build --build-arg "BV_VEC=${TAG}" -t $IMAGE_NAME .
 
 # vim: set expandtab sw=4 :
