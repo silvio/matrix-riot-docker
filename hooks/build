@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 TAG="${DOCKER_TAG}"
 [ "${TAG}" == "latest" ] && TAG="master"
