@@ -1,7 +1,7 @@
 
 # Docker image for Matrix 
 
-[![Build Status](https://travis-ci.org/AVENTER-UG/docker-matrixi-riot.svg?branch=master)](https://travis-ci.org/AVENTER-UG/docker-matrix-riot)
+[![Build Status](https://travis-ci.org/AVENTER-UG/docker-matrix-riot.svg?branch=master)](https://travis-ci.org/AVENTER-UG/docker-matrix-riot)
 
 
 ## Attention
