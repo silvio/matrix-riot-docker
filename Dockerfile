@@ -1,7 +1,7 @@
 FROM alpine:3.5
 
 # Maintainer
-MAINTAINER Silvio Fricke <silvio.fricke@gmail.com>
+MAINTAINER Andreas Peters <support@aventer.biz>
 
 # install homeserver template
 COPY adds/start.sh /start.sh
