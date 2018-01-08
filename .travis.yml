@@ -32,4 +32,6 @@ after_failure:
 
 after_success:
   - docker build -t $REPO .
+  - docker build -t $REPO:$TRAVIS_BRANCH
   - docker push $REPO      
+  - docker push $REPO:$TRAVIS_BRANCH    
