@@ -7,7 +7,7 @@
 ## Attention
 
 THIS IS A UNOFFICAL FORK OF THE DOCKER MATRIX REPO FROM SILVIO. 
-Because of personal reasons, silvio have no time to maintain it anymore. We ask if we can maintain his repository official, but didnt got a answer just now. We are using matrix byself, thats why we are very interesting to keep it up to date. :-) Fell free to contribute with us. 
+Because of personal reasons, silvio has no time to maintain it anymore. We ask if we can maintain his repository official, but didnt got a answer just now. We are using matrix ourselves, thats why we are very interested to keep it up to date. :-) Feel free to contribute with us. 
 
 
 
