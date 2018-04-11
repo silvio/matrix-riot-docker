@@ -1,26 +1,13 @@
 
-# Docker image for Matrix 
+# Docker image for Riot
 
-[![Build Status](https://travis-ci.org/AVENTER-UG/docker-matrix-riot.svg?branch=master)](https://travis-ci.org/AVENTER-UG/docker-matrix-riot)
-
-
-## Attention
-
-THIS IS A UNOFFICAL FORK OF THE DOCKER MATRIX REPO FROM SILVIO. 
-Because of personal reasons, silvio has no time to maintain it anymore. We ask if we can maintain his repository official, but didnt got a answer just now. We are using matrix ourselves, thats why we are very interested to keep it up to date. :-) Feel free to contribute with us. 
-
-
+- [Matrix Chat](https://matrix.aventer.biz/#/room/#dockermatrix:matrix.aventer.biz)
+- [Docker Hub](https://hub.docker.com/r/avhost/docker-matrix/tags)
 
 ## Introduction
 
 Dockerfile for installation of [riot.im] for [matrix] open federated Instant
 Messaging and VoIP communication server.
-
-Automatic build and tested via [travis].
-
-[matrix]: http://www.matrix.org
-[riot.im]: https://riot.im
-[travis]: https://travis-ci.org/AVENTER-UG/matrix-riot-docker
 
 ## Contribution
 
@@ -61,8 +48,6 @@ the service then.
 --key /data/key.pem
 ```
 
-
 ## build specific arguments
 
 * `BV_VEC`: riot.im version, optional, defaults to `master`
-
