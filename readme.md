@@ -3,6 +3,7 @@
 
 - [Matrix Chat](https://matrix.aventer.biz/#/room/#dockermatrix:matrix.aventer.biz)
 - [Docker Hub](https://hub.docker.com/r/avhost/docker-matrix-riot/tags)
+- [Donation](https://liberapay.com/docker-matrix/)
 
 ## Notice
 
@@ -26,15 +27,9 @@ Messaging and VoIP communication server.
 If you want contribute to this project feel free to fork this project, do your
 work in a branch and create a pull request.
 
-To support this Dockerimage please pledge via [liberapay]. 
+To support this Dockerimage please pledge via [liberapay].
 
-[liberapay]: https://liberapay.com/AVENTER
-
-Silvio is the godfather of this image. So please be nice and pledge for him via [bountysource] or
-[paypal.me/silviofricke]. 
-
-[bountysource]: https://www.bountysource.com
-[paypal.me/silviofricke]: https://www.paypal.me/SilvioFricke
+[liberapay]: https://liberapay.com/docker-matrix/
 
 ## Start
 
