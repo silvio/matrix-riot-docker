@@ -1,7 +1,7 @@
 FROM alpine:3.5
 
 # Maintainer
-MAINTAINER Silvio Fricke <silvio.fricke@gmail.com>
+MAINTAINER Andreas Peters <support@aventer.biz>
 
 # install homeserver template
 COPY adds/start.sh /start.sh
@@ -10,7 +10,7 @@ COPY adds/start.sh /start.sh
 ENTRYPOINT ["/start.sh"]
 
 # Git branch to download
-ARG BV_VEC
+ARG BV_VEC=v0.14.1
 ENV BV_VEC=${BV_VEC:-master}
 
 # To rebuild the image, add `--build-arg REBUILD=$(date)` to your docker build
