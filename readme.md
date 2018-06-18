@@ -43,7 +43,7 @@ To support this Dockerimage please pledge via [liberapay].
 For starting you need a mapping for the `/data`-directory with
 a `riot.im.conf` file.
 
-    $ docker run -d -v /tmp/data:/data silviof/matrix-riot-docker
+    $ docker run -d -v /tmp/data:/data avhost/docker-matrix-riot
 
 To configure some aspect of the service, this folder can also hold
 a `config.json` file. The riot-web "binary" will generated on every start of

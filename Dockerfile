@@ -9,8 +9,8 @@ COPY adds/start.sh /start.sh
 # startup configuration
 ENTRYPOINT ["/start.sh"]
 
-# Git branch to download
-ARG BV_VEC=v0.14.1
+# Git branch to download  
+ARG BV_VEC=v0.15.5
 ENV BV_VEC=${BV_VEC:-master}
 
 # To rebuild the image, add `--build-arg REBUILD=$(date)` to your docker build
@@ -50,3 +50,4 @@ RUN chmod a+x /start.sh \
         unzip \
         ; \
     rm -rf /var/lib/apk/* /var/cache/apk/*
+
