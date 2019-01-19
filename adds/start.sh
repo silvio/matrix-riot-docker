@@ -22,7 +22,7 @@ if [ -f ${CONFFILENAME} ]; then
 		options="${options} ${line}"
 	done < ${CONFFILENAME}
 
-	cd /riot-web/webapp
+	cd /webapp
 	echo "-=> riot.im options: http-server ${options}"
 	exec http-server ${options}
 else
