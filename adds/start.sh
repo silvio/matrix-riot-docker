@@ -2,7 +2,7 @@
 
 if [ -f /data/config.json ]; then
 	echo "-=> riot.im config file found, ... rebuild sources"
-	cp /data/config.json /riot-web/webapp/config.json
+	cp /data/config.json /webapp/config.json
 fi
 
 CONFFILENAME="/data/riot.im.conf"
@@ -22,7 +22,7 @@ if [ -f ${CONFFILENAME} ]; then
 		options="${options} ${line}"
 	done < ${CONFFILENAME}
 
-	cd /riot-web/webapp
+	cd /webapp
 	echo "-=> riot.im options: http-server ${options}"
 	exec http-server ${options}
 else
