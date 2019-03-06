@@ -1,7 +1,7 @@
 
 # Docker image for Matrix
 
-- [Matrix Chat](https://matrix.aventer.biz/#/room/#dockermatrix:matrix.aventer.biz)
+- [Matrix Chat](https://chat.aventer.biz/#/room/#dockermatrix:matrix.aventer.biz)
 - [Docker Hub](https://hub.docker.com/r/avhost/docker-matrix-riot/tags)
 - [Donation](https://liberapay.com/docker-matrix/)
 
