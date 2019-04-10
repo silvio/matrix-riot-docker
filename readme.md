@@ -11,7 +11,7 @@ Please make sure to use our tagged docker images and not the latest one. Specifi
 
 ## Creating Issues and Pull request
 
-We are working with the repository at "https://github.com/AVENTER-UG/docker-matrix-riot". If you want to open issues or create pull request, please use that repository.
+We are working with the repository at https://github.com/AVENTER-UG/docker-matrix-riot. If you want to open issues or create pull request, please use that repository.
 
 ## Security
 
