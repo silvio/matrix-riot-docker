@@ -10,7 +10,7 @@ COPY adds/start.sh /start.sh
 ENTRYPOINT ["/start.sh"]
 
 # Git branch to download  
-ARG BV_VEC=v1.0.0
+ARG BV_VEC=v1.0.7
 ENV BV_VEC=${BV_VEC:-master}
 
 # To rebuild the image, add `--build-arg REBUILD=$(date)` to your docker build
@@ -32,7 +32,7 @@ RUN chmod a+x /start.sh \
 	git \
         unzip \
         || exit 1 ; \
-    npm install -g webpack http-server \
+    npm install -g webpack http-server yarn \
     && curl -L https://github.com/vector-im/riot-web/archive/$BV_VEC.zip -o v.zip \
     && unzip v.zip \
     && rm v.zip \

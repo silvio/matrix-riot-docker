@@ -8,7 +8,7 @@ user and you need strong power in docker related tasks.
 
 # Docker image for Matrix
 
-- [Matrix Chat](https://matrix.aventer.biz/#/room/#dockermatrix:matrix.aventer.biz)
+- [Matrix Chat](https://chat.aventer.biz/#/room/#dockermatrix:matrix.aventer.biz)
 - [Docker Hub](https://hub.docker.com/r/avhost/docker-matrix-riot/tags)
 - [Donation](https://liberapay.com/docker-matrix/)
 
@@ -18,7 +18,7 @@ Please make sure to use our tagged docker images and not the latest one. Specifi
 
 ## Creating Issues and Pull request
 
-We are working with the repository at "https://github.com/AVENTER-UG/docker-matrix-riot". If you want to open issues or create pull request, please use that repository.
+We are working with the repository at https://github.com/AVENTER-UG/docker-matrix-riot. If you want to open issues or create pull request, please use that repository.
 
 ## Security
 
