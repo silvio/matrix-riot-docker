@@ -45,6 +45,7 @@ RUN chmod a+x /start.sh \
     || exit 1 \
     ; \
     mv /riot-web/webapp / ; \
+    echo "$BV_VEC" | tr -d v > /webapp/version ; \
     rm -rf /riot-web ; \
     rm -rf /root/.npm ; \
     rm -rf /tmp/* ; \
