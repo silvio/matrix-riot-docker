@@ -10,7 +10,7 @@ COPY adds/start.sh /start.sh
 ENTRYPOINT ["/start.sh"]
 
 # Git branch to download  
-ARG BV_VEC=v1.2.1
+ARG BV_VEC=v1.2.2
 ENV BV_VEC=${BV_VEC:-master}
 
 # To rebuild the image, add `--build-arg REBUILD=$(date)` to your docker build
