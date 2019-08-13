@@ -10,7 +10,7 @@ COPY adds/start.sh /start.sh
 ENTRYPOINT ["/start.sh"]
 
 # Git branch to download  
-ARG BV_VEC=v1.1.2
+ARG BV_VEC=v1.3.1
 ENV BV_VEC=${BV_VEC:-master}
 
 # To rebuild the image, add `--build-arg REBUILD=$(date)` to your docker build
@@ -45,6 +45,7 @@ RUN chmod a+x /start.sh \
     || exit 1 \
     ; \
     mv /riot-web/webapp / ; \
+    echo "$BV_VEC" | tr -d v > /webapp/version ; \
     rm -rf /riot-web ; \
     rm -rf /root/.npm ; \
     rm -rf /tmp/* ; \
