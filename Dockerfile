@@ -9,8 +9,8 @@ COPY adds/start.sh /start.sh
 # startup configuration
 ENTRYPOINT ["/start.sh"]
 
-# Git branch to download  
-ARG BV_VEC=v1.3.1
+# Git branch to download
+ARG BV_VEC=v1.3.6
 ENV BV_VEC=${BV_VEC:-master}
 
 # To rebuild the image, add `--build-arg REBUILD=$(date)` to your docker build
